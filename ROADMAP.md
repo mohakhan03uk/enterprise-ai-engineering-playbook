@@ -12,11 +12,12 @@ Each chapter ships complete — plain-English explanation, working snippets in r
 
 | | Count |
 | --- | --- |
-| Published | 3 / 28 |
-| Planned | 25 |
+| Published | 5 / 28 |
+| Planned | 23 |
 
-**Just shipped:** [Chapter 3 — The OpenAI API, Properly](docs/03-the-openai-api.md)
-**Next up:** Chapter 4 — Prompt Engineering
+**Part I — Foundations is complete.**
+**Just shipped:** [Chapter 5 — Structured Outputs](docs/05-structured-outputs.md)
+**Next up:** Chapter 6 — Function and Tool Calling
 
 ---
 
@@ -27,8 +28,8 @@ Each chapter ships complete — plain-English explanation, working snippets in r
 - [x] **1. AI Engineering Overview** — the discipline, the layers of a real system, and why the model is the easy part
 - [x] **2. How LLMs Behave** — the five behaviours that break your engineering assumptions, and what each one costs you
 - [x] **3. The OpenAI API, Properly** — messages, roles, parameters, `finish_reason`, streaming, and errors. Everything later assumes this
-- [ ] **4. Prompt Engineering** — prompts as a versioned interface, not wordsmithing
-- [ ] **5. Structured Outputs** — getting reliable JSON out of a text generator, with schemas and Pydantic
+- [x] **4. Prompt Engineering** — prompts as a versioned interface, not wordsmithing
+- [x] **5. Structured Outputs** — constrained decoding, schema design, and why a guaranteed shape says nothing about truth
 
 ### Part II — Action: Tools and MCP
 

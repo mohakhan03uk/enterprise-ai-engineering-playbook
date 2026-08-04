@@ -7,6 +7,10 @@ The playbook itself. Full contents and status: [SUMMARY.md](../SUMMARY.md).
 | 1 | [AI Engineering Overview](01-ai-engineering-overview.md) | ★★★★★ | ✅ |
 | 2 | [How LLMs Behave](02-how-llms-behave.md) | ★★★★★ | ✅ |
 | 3 | [The OpenAI API, Properly](03-the-openai-api.md) | ★★★★★ | ✅ |
+| 4 | [Prompt Engineering](04-prompt-engineering.md) | ★★★★★ | ✅ |
+| 5 | [Structured Outputs](05-structured-outputs.md) | ★★★★★ | ✅ |
+
+Part I is complete. Next: Chapter 6 — Function and Tool Calling.
 
 Chapters are published one at a time and ship complete. See [ROADMAP.md](../ROADMAP.md) for what is next and for the house style.
 

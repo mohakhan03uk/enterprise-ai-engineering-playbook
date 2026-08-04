@@ -16,8 +16,8 @@ Career weight: ★★★★★ essential · ★★★★ important · ★★★ 
 | 1 | [AI Engineering Overview](docs/01-ai-engineering-overview.md) | ★★★★★ | ✅ |
 | 2 | [How LLMs Behave](docs/02-how-llms-behave.md) | ★★★★★ | ✅ |
 | 3 | [The OpenAI API, Properly](docs/03-the-openai-api.md) | ★★★★★ | ✅ |
-| 4 | Prompt Engineering | ★★★★★ | ⬜ |
-| 5 | Structured Outputs | ★★★★★ | ⬜ |
+| 4 | [Prompt Engineering](docs/04-prompt-engineering.md) | ★★★★★ | ✅ |
+| 5 | [Structured Outputs](docs/05-structured-outputs.md) | ★★★★★ | ✅ |
 
 ## Part II — Action: Tools and MCP
 
