@@ -1,0 +1,32 @@
+%% The seven layers of a production AI system
+%% Used in: docs/01-ai-engineering-overview.md, Chapter 25
+flowchart TB
+    U(["User or calling system"])
+    GI["1 - Guardrails in<br/>policy, PII, injection screening"]
+    ORC["2 - Orchestration<br/>routing, workflow, state, agent loop"]
+    CTX["3 - Context assembly<br/>retrieval, memory, prompt construction"]
+    TOOL["4 - Tools and integrations<br/>functions, MCP servers, enterprise APIs"]
+    MOD["5 - Model access<br/>gateway, cache, routing, fallback"]
+    GO["6 - Guardrails out<br/>schema validation, grounding, safety"]
+    RESP(["Response"])
+    OBS["7 - Evaluation and observability<br/>traces, evals, cost, feedback"]
+
+    DATA[("Your data<br/>vector store, SQL, documents, graph")]
+    LLM["Model providers<br/>hosted or self-hosted"]
+
+    U --> GI --> ORC --> CTX --> MOD --> GO --> RESP
+    ORC <--> TOOL
+    CTX <--> DATA
+    MOD <--> LLM
+    ORC -.-> OBS
+    GO -.-> OBS
+
+    classDef layer fill:#1e3a8a,stroke:#93c5fd,stroke-width:1px,color:#ffffff
+    classDef ext fill:#475569,stroke:#cbd5e1,stroke-width:1px,color:#ffffff
+    classDef obs fill:#78350f,stroke:#fcd34d,stroke-width:1px,color:#ffffff
+    classDef edgepoint fill:#065f46,stroke:#6ee7b7,stroke-width:1px,color:#ffffff
+
+    class GI,ORC,CTX,TOOL,MOD,GO layer
+    class DATA,LLM ext
+    class OBS obs
+    class U,RESP edgepoint
