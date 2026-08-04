@@ -12,12 +12,12 @@ Each chapter ships complete — all fifteen sections, diagrams, decision matrix,
 
 | | Count |
 | --- | --- |
-| Published | 1 / 28 |
+| Published | 2 / 28 |
 | In progress | 0 |
-| Planned | 27 |
+| Planned | 26 |
 
-**Just shipped:** [Chapter 1 — AI Engineering Overview](docs/01-ai-engineering-overview.md)
-**Next up:** Chapter 2 — LLM Fundamentals
+**Just shipped:** [Chapter 2 — LLM Fundamentals](docs/02-llm-fundamentals.md)
+**Next up:** Chapter 3 — Prompt Engineering
 
 ---
 
@@ -26,7 +26,7 @@ Each chapter ships complete — all fifteen sections, diagrams, decision matrix,
 ### Part I — Foundations
 
 - [x] **1. AI Engineering Overview** — the discipline, the seven-layer stack, and why the model is the easy part
-- [ ] **2. LLM Fundamentals** — tokens, context windows, sampling, latency, and the four behaviours that break your assumptions
+- [x] **2. LLM Fundamentals** — tokens, the generation loop, context windows, sampling, and the prefill/decode economics behind your latency and your bill
 - [ ] **3. Prompt Engineering** — prompts as a versioned interface, not wordsmithing
 - [ ] **4. Structured Outputs** — getting machine-parseable data out of a text generator, reliably
 - [ ] **5. Context Engineering** — the discipline that replaced prompt engineering: what goes in the window and why

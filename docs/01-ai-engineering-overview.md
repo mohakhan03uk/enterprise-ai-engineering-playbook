@@ -28,7 +28,7 @@ But four assumptions you have relied on for that entire decade quietly stop hold
 
 A language model, viewed as a component in your architecture, has four properties that no dependency you have integrated with before combines all at once.
 
-**It is non-deterministic.** The same input produces different output. Not occasionally — routinely. You can reduce variance by setting the sampling temperature to zero, but you cannot eliminate it: floating-point non-associativity across batched GPU inference means even "deterministic" settings drift. Every technique you have for testing, caching, reproducing bugs, and reasoning about correctness assumes `f(x)` returns the same thing twice.
+**It is non-deterministic.** The same input produces different output. Not occasionally — routinely. You can reduce variance by setting the sampling temperature to zero, but you cannot eliminate it: your request is batched with whoever else is hitting the server at that instant, and batch composition changes the numerical result just enough to flip a close call. Server load is a hidden input to your "deterministic" call. ([Chapter 2](02-llm-fundamentals.md) explains the mechanism.) Every technique you have for testing, caching, reproducing bugs, and reasoning about correctness assumes `f(x)` returns the same thing twice.
 
 **It fails silently and confidently.** Your systems fail loudly. A database returns an error, a service times out, a queue backs up, a health check goes red. A language model returns HTTP 200, in fluent prose, with a plausible answer that happens to be false. There is no exception to catch. There is no status code for *wrong*. The failure mode looks exactly like the success mode, which means the only way to detect it is to independently evaluate the content of the answer.
 
@@ -588,4 +588,4 @@ Conceptual, as asked in real loops. If you can answer all of these clearly, you 
 
 ---
 
-[Table of Contents](../SUMMARY.md) · **Next: Chapter 2 — LLM Fundamentals** *(not yet published — see [ROADMAP.md](../ROADMAP.md))*
+[Table of Contents](../SUMMARY.md) · **Next: [Chapter 2 — LLM Fundamentals](02-llm-fundamentals.md)** →

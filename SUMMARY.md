@@ -14,7 +14,7 @@ Career weight: ★★★★★ essential · ★★★★ important · ★★★ 
 | # | Chapter | Weight | Status |
 | --- | --- | --- | --- |
 | 1 | [AI Engineering Overview](docs/01-ai-engineering-overview.md) | ★★★★★ | ✅ |
-| 2 | LLM Fundamentals | ★★★★★ | ⬜ |
+| 2 | [LLM Fundamentals](docs/02-llm-fundamentals.md) | ★★★★★ | ✅ |
 | 3 | Prompt Engineering | ★★★★★ | ⬜ |
 | 4 | Structured Outputs | ★★★★★ | ⬜ |
 | 5 | Context Engineering | ★★★★★ | ⬜ |

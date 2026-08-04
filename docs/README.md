@@ -5,6 +5,7 @@ The playbook itself. Full contents and status: [SUMMARY.md](../SUMMARY.md).
 | # | Chapter | Weight | Status |
 | --- | --- | --- | --- |
 | 1 | [AI Engineering Overview](01-ai-engineering-overview.md) | ★★★★★ | ✅ |
+| 2 | [LLM Fundamentals](02-llm-fundamentals.md) | ★★★★★ | ✅ |
 
 Chapters are published one at a time and ship complete. See [ROADMAP.md](../ROADMAP.md) for what is next.
 
