@@ -31,16 +31,24 @@ If the answer is no, it stays out — however interesting it is.
 
 ## Writing Style
 
-- **Why before how.** Architecture before code. Trade-offs before recommendations
-- **Assume competence.** The reader has shipped distributed systems. Do not explain what a queue is
-- **Analogies must be to traditional software engineering.** "MCP is JDBC for AI tools" lands; "MCP is like a friendly librarian" does not
-- **Snippets stay tiny.** Pseudo-code or ~15 lines. If it needs more, it needs a diagram
-- **Name the trade-off.** Every recommendation carries a cost. State it
+The reader is an experienced software engineer with **no ML background**, building tools, MCP servers, and agents.
+
+- **No maths.** Ever. ML appears only as intuition, in the clearly marked skippable box
+- **No hardware internals.** Give the consequence, not the mechanism. "Long answers are slow and expensive" — not memory bandwidth
+- **Show it in code.** Raw OpenAI first with nothing hidden, then LangChain or LangGraph with an honest account of what it adds *and hides*
+- **Name concept and framework separately.** "This is tool calling; LangChain calls it `bind_tools`" — so the chapter survives a rename
+- **Snippets under 12 lines.** If it needs more, it needs a diagram
+- **Paragraphs of 2–4 sentences**, with a bolded one-line takeaway opening each section
+- **Real numbers and real symptoms.** "3% of responses returned malformed JSON" beats "reliability can suffer"
+- **Analogies to software engineering.** "MCP is JDBC for AI tools" lands; "MCP is like a friendly librarian" does not
+- **Name the trade-off.** Every recommendation carries a cost
 - **No hedging.** "It depends" is only acceptable when followed by *what* it depends on
 
 ## Chapter Structure
 
-New chapters use [templates/CHAPTER_TEMPLATE.md](templates/CHAPTER_TEMPLATE.md) and follow all fifteen sections in order. The consistency is the feature — readers learn to skim to the section they need.
+New chapters use [templates/CHAPTER_TEMPLATE.md](templates/CHAPTER_TEMPLATE.md) and follow the sections in order. The consistency is the feature — readers learn to skim to the section they need.
+
+Every chapter also advances **CaseMate**, the running example: an internal assistant for support engineers that answers from product documentation and looks up support cases. Show how it changes in your chapter.
 
 ## Diagrams
 

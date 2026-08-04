@@ -1,115 +1,182 @@
 # Chapter N — {Title}
 
-> **Reading time:** ~35 minutes · **Career weight:** ★★★★☆ · **Prerequisites:** Chapter X
+> **Reading time:** ~30 minutes · **Career weight:** ★★★★☆ · **Prerequisites:** Chapter X
 >
 > **In one line:** {The single sentence that captures the chapter.}
 
 ---
 
+## How to Write a Chapter
+
+*(Delete this block when you use the template.)*
+
+**The reader is an experienced software engineer who is new to AI and is building tools, MCP servers, and agents.** They do not have an ML background and do not need one. They need to understand things well enough to make good decisions and build working systems.
+
+### Style rules — these are mechanical, not aspirational
+
+| Rule | Why |
+| --- | --- |
+| Paragraphs of 2–4 sentences. Never 6 | Walls of text are where readers give up |
+| Open every section with a **bolded one-line takeaway** | Skimming has to work |
+| Real numbers and real symptoms, not abstract description | "3% of responses returned malformed JSON" beats "reliability can suffer" |
+| Analogies to things the reader already knows | REST, JDBC, microservices, Kubernetes, plugins, drivers |
+| No hardware internals | No memory bandwidth, kernel behaviour, or KV cache mechanics. Give the consequence, not the mechanism |
+| No maths | Ever. Intuition only |
+
+### Every concept appears three times, getting more concrete
+
+1. **The idea** — plain English plus an analogy
+2. **Raw OpenAI SDK** — 8–12 lines with nothing hiding the concept
+3. **LangChain / LangGraph** — the same thing, plus what the framework adds *and what it hides*
+
+Always name the concept and the framework's word for it separately:
+
+> *"This is tool calling. LangChain calls it `bind_tools`. The wrapper handles the retry loop you would otherwise write yourself."*
+
+That way the chapter survives the framework renaming things.
+
+**Snippets stay under 12 lines.** If it needs more, it needs a diagram.
+
+### The running example
+
+Every chapter uses **CaseMate** — an internal assistant for support engineers at a software vendor. It answers questions from product documentation and can look up a customer's support case by ID.
+
+Show how CaseMate changes in *this* chapter. One system growing across 28 chapters beats 28 unrelated examples.
+
+---
+
 ## 1. Why This Matters
 
-Why should an AI Engineer care? Open with the consequence of *not* knowing this — a real failure, a wasted quarter, a blown budget. Three or four paragraphs maximum.
+**{One-line takeaway.}**
+
+Open with the consequence of not knowing this — a real failure, a wasted month, a blown budget. Three short paragraphs.
 
 ---
 
 ## 2. The Problem
 
-State the engineering problem precisely. What breaks without this? What did people do before it existed, and why did that stop working?
+**{One-line takeaway.}**
+
+The engineering problem, stated plainly. What breaks without this?
 
 ---
 
 ## 3. Mental Model
 
-An analogy to traditional software engineering the reader already knows.
-
 > **{Thing} is {familiar thing} for {AI context}.**
 
-Then state where the analogy breaks. Every analogy leaks; naming the leak is what makes it useful rather than misleading.
+The analogy, then where it leaks. Every analogy leaks; naming the leak is what stops it misleading people.
 
 ---
 
-## 4. Architecture
+## 4. The ML Bit, in Plain English
 
-How the pieces fit together. One diagram that earns its place.
+> **Skippable.** Here for when someone asks you in a meeting.
+
+Intuition only. No maths, no notation, no training details. If you cannot explain it without a formula, cut it.
+
+*Omit this section entirely in chapters where there is no ML concept to explain.*
+
+---
+
+## 5. Architecture
+
+**{One-line takeaway.}**
+
+One diagram that earns its place, then walk through it in prose.
 
 ```mermaid
 flowchart LR
     A[Component] --> B[Component]
 ```
 
-Walk through the diagram in prose. Do not make the reader infer it.
+---
+
+## 6. See It in Code
+
+**{One-line takeaway.}**
+
+### Raw OpenAI
+
+```python
+# 8-12 lines. Nothing hidden.
+```
+
+What to notice: {the one or two things the reader should take from the snippet}.
+
+### With LangChain / LangGraph
+
+```python
+# The same thing, framework version.
+```
+
+**What the framework adds:** {concrete list}
+**What it hides:** {concrete list — this matters more}
+**Use the framework when:** {condition}. **Use the raw SDK when:** {condition}.
+
+### In CaseMate
+
+How the running example changes in this chapter.
 
 ---
 
-## 5. Internal Working
+## 7. Engineering Decisions
 
-What happens under the hood, and — more importantly — *why it was built that way*. Reasoning over implementation detail. The reader should be able to predict how it behaves in a situation this chapter never mentions.
+**{One-line takeaway.}**
 
----
-
-## 6. Engineering Decisions
-
-- **Why does this exist?** What forced it into being.
-- **What alternatives exist?** Including "do nothing" and "use the boring technology you already run."
-- **What problems does it actually solve?** And which ones it is wrongly believed to solve.
+- Why does this exist? What forced it into being.
+- What alternatives exist? Including "do nothing" and "use the boring thing you already run."
+- What does it actually solve, and what is it wrongly believed to solve?
 
 ---
 
-## 7. Decision Matrix
-
-### Should I use this?
+## 8. Decision Matrix
 
 | | |
 | --- | --- |
 | ✅ **YES if** | {Condition} · {Condition} · {Condition} |
 | ❌ **NO if** | {Condition} · {Condition} · {Condition} |
-| ⚠️ **It depends on** | {The specific variable that decides it} |
+| ⚠️ **Depends on** | {The specific variable that decides it} |
 
-### Alternatives
-
-| Alternative | Choose it when | Cost of choosing it |
+| Alternative | Choose it when | What it costs you |
 | --- | --- | --- |
 | | | |
 
 ---
 
-## 8. Technology Landscape
+## 9. Technology Landscape
 
-The major APIs, SDKs, and frameworks. No syntax — purpose, fit, and limits only.
+No syntax. Purpose, fit, and limits only.
 
-| Technology | Purpose | Use when | Strengths | Limitations | Enterprise adoption |
-| --- | --- | --- | --- | --- | --- |
-| | | | | | |
+| Technology | What it is for | Use when | Watch out for |
+| --- | --- | --- | --- |
+| | | | |
 
-> This section ages fastest. Reviewed quarterly.
+> Ages fastest. Reviewed quarterly.
 
 ---
 
-## 9. Production Notes
+## 10. Production Notes
 
 | Concern | What to get right |
 | --- | --- |
 | **Security** | |
 | **Scaling** | |
 | **Observability** | |
-| **Logging** | |
-| **Tracing** | |
-| **Failure scenarios** | |
+| **Failure modes** | |
 | **Cost** | |
 
 ---
 
-## 10. Best Practices
+## 11. Best Practices and Common Mistakes
 
-Practical and specific. If a practice could be applied without understanding this chapter, it is too generic to include.
+**Do this**
 
----
+- {Specific and actionable. If it could be said without reading this chapter, it is too generic}
 
-## 11. Common Mistakes
+**Not this**
 
-Mistakes actually seen on real projects, each with the symptom and the fix.
-
-| Mistake | What it looks like | Do this instead |
+| Mistake | What it looks like | Do instead |
 | --- | --- | --- |
 | | | |
 
@@ -117,58 +184,50 @@ Mistakes actually seen on real projects, each with the symptom and the fix.
 
 ## 12. Forward Deployed Engineer Notes
 
-**Real customer problems** — how this shows up in the field, in the customer's words rather than yours.
+Keep tight — a table and a checklist, not essays.
 
-**Discovery questions** — what to ask in week one to find out whether this applies.
+**What customers say, and what it means**
 
-**Architecture decisions** — the calls you will have to make on site.
+| They say | It means | Ask |
+| --- | --- | --- |
+| | | |
 
-**Integration challenges** — what breaks when it meets the customer's actual estate.
+**Discovery questions** — three to five that change the shape of the engagement.
 
-**Build vs Buy** — the honest version.
+**Build vs buy** — the honest version.
 
-**Production checklist** — what must be true before go-live.
+**Before go-live**
 
-**Enterprise considerations** — procurement, compliance, data residency, audit.
+- [ ] {Checklist item}
 
 ---
 
 ## 13. Career Notes
 
-**Importance:** ★★★★☆ Important
+**Importance:** ★★★★☆
 
-**In interviews:** where and how this comes up.
-
-**In enterprise projects:** how often you will actually touch it.
-
-**Signal of seniority:** what a senior engineer says about this that a junior does not.
+**In interviews:** how it comes up.
+**On the job:** how often you touch it.
+**Seniority signal:** what a senior engineer says that a junior does not.
 
 ---
 
 ## 14. One Minute Summary
 
-> If you remember one thing: **{the one thing}**
+> **If you remember one thing: {the one thing}**
 
-Three to five bullets underneath. No new material.
+Three to five bullets. No new material.
 
 ---
 
-## 15. Interview Questions
+## 15. Interview Questions and References
 
-Ten to fifteen conceptual questions. No coding.
+Ten to fifteen conceptual questions, no coding.
 
 1.
-2.
+
+**References** — official docs, repositories, technical writing, and papers only where they change how you build.
 
 ---
 
-## References
-
-**Official documentation** ·
-**Repositories** ·
-**Technical writing** ·
-**Papers** (only where they change how you build)
-
----
-
-← [Previous chapter](.) · [Table of Contents](../SUMMARY.md) · [Next chapter](.) →
+← [Previous](.) · [Contents](../SUMMARY.md) · [Next](.) →

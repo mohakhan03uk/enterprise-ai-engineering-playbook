@@ -1,6 +1,6 @@
 # Table of Contents
 
-Twenty-eight chapters, seven parts. Each chapter is a 30–45 minute read.
+Twenty-eight chapters, seven parts. Each is about a 30-minute read, anchored in OpenAI, LangChain, and LangGraph.
 
 Legend: ✅ published · ✍️ in progress · ⬜ planned
 Career weight: ★★★★★ essential · ★★★★ important · ★★★ useful · ★★ nice to know · ★ rarely needed
@@ -9,80 +9,92 @@ Career weight: ★★★★★ essential · ★★★★ important · ★★★ 
 
 ## Part I — Foundations
 
-*What an LLM actually is, and how to talk to it like an engineer.*
+*What a model is, what it does to your assumptions, and your first real API calls.*
 
 | # | Chapter | Weight | Status |
 | --- | --- | --- | --- |
 | 1 | [AI Engineering Overview](docs/01-ai-engineering-overview.md) | ★★★★★ | ✅ |
-| 2 | [LLM Fundamentals](docs/02-llm-fundamentals.md) | ★★★★★ | ✅ |
-| 3 | Prompt Engineering | ★★★★★ | ⬜ |
-| 4 | Structured Outputs | ★★★★★ | ⬜ |
-| 5 | Context Engineering | ★★★★★ | ⬜ |
+| 2 | [How LLMs Behave](docs/02-how-llms-behave.md) | ★★★★★ | ✅ |
+| 3 | [The OpenAI API, Properly](docs/03-the-openai-api.md) | ★★★★★ | ✅ |
+| 4 | Prompt Engineering | ★★★★★ | ⬜ |
+| 5 | Structured Outputs | ★★★★★ | ⬜ |
 
-## Part II — Grounding: Knowledge & Retrieval
+## Part II — Action: Tools and MCP
 
-*Getting your data in front of the model without touching its weights.*
-
-| # | Chapter | Weight | Status |
-| --- | --- | --- | --- |
-| 6 | Embeddings | ★★★★ | ⬜ |
-| 7 | Retrieval-Augmented Generation | ★★★★★ | ⬜ |
-| 8 | Vector Databases | ★★★★ | ⬜ |
-| 9 | Knowledge Graphs & GraphRAG | ★★★ | ⬜ |
-
-## Part III — Action: Tools & Protocols
-
-*How a model reaches out and touches your systems.*
+*How a model reaches out and touches your systems. This is what you build.*
 
 | # | Chapter | Weight | Status |
 | --- | --- | --- | --- |
-| 10 | Function & Tool Calling | ★★★★★ | ⬜ |
-| 11 | Model Context Protocol (MCP) | ★★★★ | ⬜ |
+| 6 | Function and Tool Calling | ★★★★★ | ⬜ |
+| 7 | MCP Explained | ★★★★ | ⬜ |
+| 8 | Building MCP Servers and Clients | ★★★★ | ⬜ |
+
+## Part III — Data: Grounding the Model
+
+*Getting your own data in front of a model without touching its weights.*
+
+| # | Chapter | Weight | Status |
+| --- | --- | --- | --- |
+| 9 | Embeddings | ★★★★ | ⬜ |
+| 10 | Retrieval-Augmented Generation | ★★★★★ | ⬜ |
+| 11 | Vector Databases | ★★★★ | ⬜ |
+| 12 | Chunking and Retrieval Quality | ★★★★ | ⬜ |
+| 13 | Knowledge Graphs and GraphRAG | ★★★ | ⬜ |
 
 ## Part IV — Agents
 
-*Autonomy: when it earns its keep, and how to bound it.*
+*Autonomy: when it earns its keep, and how to stop it running away.*
 
 | # | Chapter | Weight | Status |
 | --- | --- | --- | --- |
-| 12 | AI Agents: Foundations | ★★★★★ | ⬜ |
-| 13 | Agent Workflows & Orchestration Patterns | ★★★★★ | ⬜ |
-| 14 | Memory | ★★★★ | ⬜ |
-| 15 | Multi-Agent Systems & A2A | ★★★ | ⬜ |
+| 14 | What an Agent Really Is | ★★★★★ | ⬜ |
+| 15 | LangChain | ★★★★ | ⬜ |
+| 16 | LangGraph | ★★★★★ | ⬜ |
+| 17 | Agent Patterns and Workflows | ★★★★★ | ⬜ |
+| 18 | Memory | ★★★★ | ⬜ |
+| 19 | Multi-Agent Systems and A2A | ★★★ | ⬜ |
 
-## Part V — The Framework Landscape
-
-*Read this part last. Choosing a framework before you understand the problem is the most expensive mistake in this field.*
+## Part V — The Wider Landscape
 
 | # | Chapter | Weight | Status |
 | --- | --- | --- | --- |
-| 16 | Choosing an Agent Framework | ★★★★ | ⬜ |
-| 17 | LangChain & LangGraph | ★★★★ | ⬜ |
-| 18 | Provider-Native SDKs — OpenAI Agents SDK, Claude Agent SDK, Google ADK, Microsoft Agent Framework / Semantic Kernel | ★★★ | ⬜ |
-| 19 | Data & Typed Frameworks — LlamaIndex, PydanticAI, DSPy, CrewAI, Agno | ★★★ | ⬜ |
+| 20 | The Framework Landscape — OpenAI Agents SDK, Google ADK, CrewAI, Semantic Kernel, LlamaIndex, PydanticAI, DSPy, Agno | ★★★ | ⬜ |
 
-## Part VI — Operating AI in Production
+## Part VI — Production
 
 *The part that separates a demo from a system.*
 
 | # | Chapter | Weight | Status |
 | --- | --- | --- | --- |
-| 20 | Evaluation | ★★★★★ | ⬜ |
-| 21 | AI Observability & Tracing — OpenTelemetry GenAI, LangSmith, alternatives | ★★★★★ | ⬜ |
-| 22 | Guardrails | ★★★★ | ⬜ |
-| 23 | AI Security | ★★★★★ | ⬜ |
-| 24 | Deployment & Serving | ★★★★ | ⬜ |
+| 21 | Evaluation | ★★★★★ | ⬜ |
+| 22 | Observability and LangSmith | ★★★★★ | ⬜ |
+| 23 | Guardrails | ★★★★ | ⬜ |
+| 24 | AI Security | ★★★★★ | ⬜ |
+| 25 | Deployment and Serving | ★★★★ | ⬜ |
+| 26 | Cost Optimization | ★★★★ | ⬜ |
 
 ## Part VII — Enterprise
 
-*Architecture, money, and staying relevant.*
-
 | # | Chapter | Weight | Status |
 | --- | --- | --- | --- |
-| 25 | Enterprise AI Architecture | ★★★★★ | ⬜ |
-| 26 | Cost Optimization | ★★★★ | ⬜ |
-| 27 | Building an AI Platform | ★★★ | ⬜ |
-| 28 | Future Trends & Staying Current | ★★ | ⬜ |
+| 27 | Enterprise AI Architecture | ★★★★★ | ⬜ |
+| 28 | Future Trends and Staying Current | ★★ | ⬜ |
+
+---
+
+## The Running Example
+
+Every chapter builds the same system: **CaseMate**, an internal assistant for support engineers. It answers questions from product documentation and can look up a customer's support case by ID.
+
+You watch one system grow across twenty-eight chapters rather than meeting twenty-eight unrelated examples.
+
+| By the end of | CaseMate can |
+| --- | --- |
+| Part I | Answer a question and return a parseable result |
+| Part II | Look up a real case in the support system |
+| Part III | Answer from your product documentation, with citations |
+| Part IV | Triage a case end to end, across several steps |
+| Part VI | Prove it works, be traced, be bounded, and be affordable |
 
 ---
 
@@ -91,7 +103,7 @@ Career weight: ★★★★★ essential · ★★★★ important · ★★★ 
 | Location | Contents |
 | --- | --- |
 | [decision-matrices/](decision-matrices/) | Standalone "should I use X?" matrices, usable in an architecture review |
-| [references/](references/) | Consolidated reading list — docs, repos, papers, blogs |
+| [references/](references/) | Consolidated reading list |
 | [career/](career/) | Role tracks, skills matrix, interview preparation |
 | [templates/](templates/) | Chapter template, AI ADR template, production readiness checklist |
 | [diagrams/](diagrams/) | Reusable Mermaid sources |

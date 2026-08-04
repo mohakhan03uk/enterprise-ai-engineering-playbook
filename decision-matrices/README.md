@@ -7,7 +7,7 @@ Each chapter contains its own Decision Matrix in section 7. This folder holds th
 | Matrix | Question it answers | Source |
 | --- | --- | --- |
 | [Do you need an LLM at all?](do-you-need-an-llm.md) | Should this problem be solved with a language model, or with the boring technology you already run? | [Chapter 1](../docs/01-ai-engineering-overview.md) |
-| [Choosing a model](choosing-a-model.md) | Which capability tier, reasoning mode, and deployment model? | [Chapter 2](../docs/02-llm-fundamentals.md) |
+| [Choosing a model](choosing-a-model.md) | Which capability tier, reasoning mode, and deployment model? | [Chapter 2](../docs/02-how-llms-behave.md) |
 
 ## How to Use These
 

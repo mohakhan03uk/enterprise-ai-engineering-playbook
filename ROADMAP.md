@@ -4,7 +4,7 @@
 
 One chapter at a time. A finished chapter beats four drafts.
 
-Each chapter ships complete — all fifteen sections, diagrams, decision matrix, FDE notes, interview questions, and verified references. Nothing is merged as a stub.
+Each chapter ships complete — plain-English explanation, working snippets in raw OpenAI and in LangChain or LangGraph, one diagram, a decision matrix, FDE notes, and verified references. Nothing merges as a stub.
 
 ---
 
@@ -12,12 +12,11 @@ Each chapter ships complete — all fifteen sections, diagrams, decision matrix,
 
 | | Count |
 | --- | --- |
-| Published | 2 / 28 |
-| In progress | 0 |
-| Planned | 26 |
+| Published | 3 / 28 |
+| Planned | 25 |
 
-**Just shipped:** [Chapter 2 — LLM Fundamentals](docs/02-llm-fundamentals.md)
-**Next up:** Chapter 3 — Prompt Engineering
+**Just shipped:** [Chapter 3 — The OpenAI API, Properly](docs/03-the-openai-api.md)
+**Next up:** Chapter 4 — Prompt Engineering
 
 ---
 
@@ -25,91 +24,111 @@ Each chapter ships complete — all fifteen sections, diagrams, decision matrix,
 
 ### Part I — Foundations
 
-- [x] **1. AI Engineering Overview** — the discipline, the seven-layer stack, and why the model is the easy part
-- [x] **2. LLM Fundamentals** — tokens, the generation loop, context windows, sampling, and the prefill/decode economics behind your latency and your bill
-- [ ] **3. Prompt Engineering** — prompts as a versioned interface, not wordsmithing
-- [ ] **4. Structured Outputs** — getting machine-parseable data out of a text generator, reliably
-- [ ] **5. Context Engineering** — the discipline that replaced prompt engineering: what goes in the window and why
+- [x] **1. AI Engineering Overview** — the discipline, the layers of a real system, and why the model is the easy part
+- [x] **2. How LLMs Behave** — the five behaviours that break your engineering assumptions, and what each one costs you
+- [x] **3. The OpenAI API, Properly** — messages, roles, parameters, `finish_reason`, streaming, and errors. Everything later assumes this
+- [ ] **4. Prompt Engineering** — prompts as a versioned interface, not wordsmithing
+- [ ] **5. Structured Outputs** — getting reliable JSON out of a text generator, with schemas and Pydantic
 
-### Part II — Grounding
+### Part II — Action: Tools and MCP
 
-- [ ] **6. Embeddings** — vectors as a similarity primitive, and where the metaphor breaks
-- [ ] **7. Retrieval-Augmented Generation** — the highest-leverage pattern in enterprise AI
-- [ ] **8. Vector Databases** — do you need one, or is it an index on the database you already run?
-- [ ] **9. Knowledge Graphs & GraphRAG** — when relationships matter more than similarity
+- [ ] **6. Function and Tool Calling** — the mechanism behind every agent, in raw OpenAI then LangChain
+- [ ] **7. MCP Explained** — why a standard beats bespoke integrations, and what it does not solve
+- [ ] **8. Building MCP Servers and Clients** — resources, tools, prompts, transports, and auth
 
-### Part III — Action
+### Part III — Data: Grounding
 
-- [ ] **10. Function & Tool Calling** — the mechanism behind every agent; why "function" and "tool" calling are the same thing
-- [ ] **11. Model Context Protocol (MCP)** — the integration standard, and what it does and does not solve
+- [ ] **9. Embeddings** — vectors as a similarity primitive, and where the idea breaks down
+- [ ] **10. Retrieval-Augmented Generation** — the highest-leverage pattern in enterprise AI
+- [ ] **11. Vector Databases** — do you need one, or is it an index on the database you already run?
+- [ ] **12. Chunking and Retrieval Quality** — where RAG systems actually fail, and how to measure it
+- [ ] **13. Knowledge Graphs and GraphRAG** — when relationships matter more than similarity
 
 ### Part IV — Agents
 
-- [ ] **12. AI Agents: Foundations** — the loop, the failure modes, and when a workflow is the better answer
-- [ ] **13. Agent Workflows & Orchestration Patterns** — routing, chaining, parallelism, reflection, human-in-the-loop
-- [ ] **14. Memory** — short-term, long-term, episodic, semantic; and why most "memory" is a database with better marketing
-- [ ] **15. Multi-Agent Systems & A2A** — coordination cost, and the cases where it genuinely pays
+- [ ] **14. What an Agent Really Is** — the loop, the failure modes, and when a workflow is the better answer
+- [ ] **15. LangChain** — the pieces worth knowing, the pieces to skip, and the abstraction tax
+- [ ] **16. LangGraph** — state, nodes, edges, checkpoints, and human-in-the-loop
+- [ ] **17. Agent Patterns and Workflows** — routing, chaining, parallelism, reflection, approval gates
+- [ ] **18. Memory** — short-term, long-term, and why most "memory" is a database with better marketing
+- [ ] **19. Multi-Agent Systems and A2A** — coordination cost, and the cases where it genuinely pays
 
-### Part V — Frameworks
+### Part V — The Wider Landscape
 
-- [ ] **16. Choosing an Agent Framework** — the decision framework, applied to the 2026 landscape
-- [ ] **17. LangChain & LangGraph** — the production default, its graph model, and its verbosity tax
-- [ ] **18. Provider-Native SDKs** — OpenAI Agents SDK, Claude Agent SDK, Google ADK, Microsoft Agent Framework / Semantic Kernel
-- [ ] **19. Data & Typed Frameworks** — LlamaIndex, PydanticAI, DSPy, CrewAI, Agno
+- [ ] **20. The Framework Landscape** — OpenAI Agents SDK, Google ADK, CrewAI, Semantic Kernel, LlamaIndex, PydanticAI, DSPy, Agno. How to evaluate a framework, applied
 
-### Part VI — Operations
+### Part VI — Production
 
-- [ ] **20. Evaluation** — golden datasets, LLM-as-judge, and the regression suite that gates every change
-- [ ] **21. AI Observability & Tracing** — OpenTelemetry GenAI conventions, LangSmith, and what a good trace looks like
-- [ ] **22. Guardrails** — input and output validation, PII, topical boundaries, and the latency they cost
-- [ ] **23. AI Security** — prompt injection, the lethal trifecta, OWASP LLM and Agentic Top 10
-- [ ] **24. Deployment & Serving** — hosted vs self-hosted, gateways, routing, caching, tail latency
+- [ ] **21. Evaluation** — golden datasets, LLM-as-judge, and the regression suite that gates every change
+- [ ] **22. Observability and LangSmith** — traces, OpenTelemetry GenAI conventions, and debugging a bad answer from last month
+- [ ] **23. Guardrails** — input and output validation, PII, topical boundaries, and the latency they cost
+- [ ] **24. AI Security** — prompt injection, the lethal trifecta, OWASP LLM and Agentic Top 10
+- [ ] **25. Deployment and Serving** — hosted vs self-hosted, gateways, routing, caching, tail latency
+- [ ] **26. Cost Optimization** — token budgets, caching, model tiering, cost attribution
 
 ### Part VII — Enterprise
 
-- [ ] **25. Enterprise AI Architecture** — the reference architecture, and the org chart it implies
-- [ ] **26. Cost Optimization** — token budgets, caching layers, model tiering, cost attribution
-- [ ] **27. Building an AI Platform** — the paved road: gateway, eval harness, tracing, governance, self-service
-- [ ] **28. Future Trends & Staying Current** — what is durable, what is hype, and how to tell the difference in six months
+- [ ] **27. Enterprise AI Architecture** — the reference architecture, and the org chart it implies
+- [ ] **28. Future Trends and Staying Current** — what is durable, what is hype, and how to tell in six months
+
+---
+
+## House Style
+
+The playbook is written for an experienced software engineer with **no ML background** who is building tools, MCP servers, and agents.
+
+| Rule | Detail |
+| --- | --- |
+| **Concrete over abstract** | Every concept is shown in raw OpenAI first, then in LangChain or LangGraph |
+| **Concept and framework named separately** | "This is tool calling; LangChain calls it `bind_tools`" — so the chapter survives a rename |
+| **Snippets under 12 lines** | If it needs more, it needs a diagram |
+| **No maths, ever** | ML appears only as intuition, in a clearly marked skippable box |
+| **No hardware internals** | Give the consequence, not the mechanism |
+| **One running example** | CaseMate, a support-engineer assistant, grows across all 28 chapters |
+| **Paragraphs of 2–4 sentences** | And a bolded takeaway opening each section, so skimming works |
+
+Full guidance: [templates/CHAPTER_TEMPLATE.md](templates/CHAPTER_TEMPLATE.md).
 
 ---
 
 ## Design Decisions
 
-Choices made about scope, recorded so they can be challenged.
+Choices about scope, recorded so they can be challenged.
 
-### Function Calling and Tool Calling are one chapter, not two
+### Builder-first ordering
 
-They are the same mechanism described at two levels of abstraction. Two chapters would repeat each other. The chapter covers both and explains why the industry uses both terms.
+Tool calling is Chapter 6 and MCP is Chapter 7, rather than 10 and 11. Most readers of this playbook are building tools, MCP servers, and agents — making them wait through five chapters of retrieval theory first is the wrong order for that job. Retrieval follows immediately after, because an agent that retrieves badly fails for retrieval reasons.
 
-### Nine framework topics became four chapters
+### A dedicated chapter on the OpenAI API
 
-A chapter each for LangChain, LangGraph, OpenAI Agents SDK, Google ADK, CrewAI, Semantic Kernel, LlamaIndex, PydanticAI, DSPy, and Agno would be nine variations on the same content — and stale within a year.
+Chapter 3 exists because everything later assumes you can read a request and a response object fluently — roles, `finish_reason`, `usage`, streaming, tool call structure. It is also the fastest way to make abstract concepts concrete.
 
-What actually transfers is *how to evaluate a framework*. So Part V leads with the decision framework, gives LangGraph a full chapter because it dominates production deployments, and covers the rest comparatively. If a framework becomes a production default later, it earns its own chapter then.
+### LangChain and LangGraph get chapters; the rest get a survey
 
-### RAG comes before agents
+They are what most teams actually encounter, and LangGraph dominates production agent deployments. Nine separate framework chapters would be nine variations on one theme and stale within a year, so the others are covered comparatively in Chapter 20 — after you know enough to evaluate them.
 
-The original topic ordering placed retrieval after the agent frameworks. Reversed deliberately: most enterprise AI projects are retrieval problems, agents are a smaller subset, and agents that retrieve badly fail for retrieval reasons. Grounding first.
+### Function Calling and Tool Calling are one chapter
+
+Same mechanism, two names. Two chapters would repeat each other.
 
 ### No chapter on fine-tuning
 
-Fine-tuning is ML Engineering, not AI Engineering, and in enterprise settings it is the answer far less often than people expect. It is covered as a *decision* — when it beats retrieval and prompting — inside Context Engineering and Cost Optimization, rather than as a how-to.
+Fine-tuning is ML Engineering, and in enterprise settings it is the answer far less often than people expect. It appears as a *decision* — when it beats retrieval and prompting — inside the retrieval and cost chapters, not as a how-to.
 
 ---
 
 ## Non-Goals
 
 - Complete applications or reference implementations
-- API syntax reference — the provider docs do that better and stay current
+- API syntax reference — provider docs do that better and stay current
 - Model benchmarks and leaderboards — stale within weeks
-- Model training, fine-tuning mechanics, or GPU kernel work
+- Model training, fine-tuning mechanics, or GPU work
 - Vendor advocacy
 
 ---
 
 ## Maintenance
 
-The ecosystem moves fast; the engineering reasoning does not. Chapters are structured so that the durable parts — mental models, architecture, trade-offs — stay valid, and the volatile parts — Technology Landscape, References — are isolated in named sections that can be refreshed without a rewrite.
+The ecosystem moves fast; the engineering reasoning does not. Volatile content — Technology Landscape sections, references, framework APIs — is isolated in named sections that can be refreshed without a rewrite.
 
-**Review cadence:** Technology Landscape and References sections reviewed quarterly. Everything else, on change.
+**Review cadence:** Technology Landscape, code snippets, and References reviewed quarterly. Everything else on change.

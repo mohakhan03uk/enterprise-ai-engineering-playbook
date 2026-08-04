@@ -2,7 +2,7 @@
 
 **Use this in:** architecture reviews, cost discussions, and the meeting where someone proposes standardising the whole organisation on one frontier model.
 
-**Source chapter:** [Chapter 2 — LLM Fundamentals](../docs/02-llm-fundamentals.md)
+**Source chapter:** [Chapter 2 — How LLMs Behave](../docs/02-how-llms-behave.md)
 
 ---
 
