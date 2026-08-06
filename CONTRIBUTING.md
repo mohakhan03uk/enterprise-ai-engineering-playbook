@@ -48,7 +48,7 @@ The reader is an experienced software engineer with **no ML background**, buildi
 
 New chapters use [templates/CHAPTER_TEMPLATE.md](templates/CHAPTER_TEMPLATE.md) and follow the sections in order. The consistency is the feature — readers learn to skim to the section they need.
 
-Every chapter also advances **CaseMate**, the running example: an internal assistant for support engineers that answers from product documentation and looks up support cases. Show how it changes in your chapter.
+Examples must be self-contained. Explain the scenario where it appears, in a sentence, using something a reader recognises immediately — an order lookup, a support ticket, a customer record. Never require the reader to remember a scenario introduced in an earlier chapter.
 
 ## Diagrams
 

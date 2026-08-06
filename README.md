@@ -36,23 +36,7 @@ Six rules, applied to every chapter:
 - **Every concept shown in code.** Raw OpenAI first, so nothing is hidden. Then LangChain or LangGraph, with an honest account of what the framework adds *and what it hides*.
 - **Concept and framework named separately.** *"This is tool calling; LangChain calls it `bind_tools`."* So the chapter survives a rename.
 - **Snippets under 12 lines.** If it needs more, it needs a diagram.
-- **One running example** across all 28 chapters, so you watch one system grow instead of meeting 28 unrelated ones.
-
----
-
-## The Running Example: CaseMate
-
-Every chapter builds the same thing — **CaseMate**, an internal assistant for support engineers at a software vendor. It answers questions from product documentation and can look up a customer's support case by ID.
-
-| By the end of | CaseMate can |
-| --- | --- |
-| **Part I** | Answer a question and return a result your code can parse |
-| **Part II** | Look up a real case in the support system, over MCP |
-| **Part III** | Answer from your product documentation, with citations |
-| **Part IV** | Triage a case end to end, across multiple steps |
-| **Part VI** | Prove it works, be traced, be bounded, and be affordable |
-
-Deliberately unglamorous, and deliberately realistic. It needs every topic in the playbook, in roughly the order the playbook covers them.
+- **Self-contained examples.** Every example is explained where it appears — you never need to remember something from six chapters ago.
 
 ---
 

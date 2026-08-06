@@ -37,11 +37,11 @@ That way the chapter survives the framework renaming things.
 
 **Snippets stay under 12 lines.** If it needs more, it needs a diagram.
 
-### The running example
+### Examples must be self-contained
 
-Every chapter uses **CaseMate** — an internal assistant for support engineers at a software vendor. It answers questions from product documentation and can look up a customer's support case by ID.
+Explain the scenario where it appears, in one sentence, using something the reader recognises instantly — an order lookup, a support ticket, a customer record, a refund.
 
-Show how CaseMate changes in *this* chapter. One system growing across 28 chapters beats 28 unrelated examples.
+**Never require the reader to remember a scenario from an earlier chapter.** A named running example seems elegant when you are writing and is an obstacle when someone opens a chapter in the middle. If your example needs a paragraph of setup, pick a more obvious one.
 
 ---
 
@@ -114,9 +114,9 @@ What to notice: {the one or two things the reader should take from the snippet}.
 **What it hides:** {concrete list — this matters more}
 **Use the framework when:** {condition}. **Use the raw SDK when:** {condition}.
 
-### In CaseMate
+### In practice
 
-How the running example changes in this chapter.
+A worked example that pulls the two together. Self-contained.
 
 ---
 

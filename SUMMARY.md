@@ -25,8 +25,8 @@ Career weight: ★★★★★ essential · ★★★★ important · ★★★ 
 
 | # | Chapter | Weight | Status |
 | --- | --- | --- | --- |
-| 6 | Function and Tool Calling | ★★★★★ | ⬜ |
-| 7 | MCP Explained | ★★★★ | ⬜ |
+| 6 | [Function and Tool Calling](docs/06-function-and-tool-calling.md) | ★★★★★ | ✅ |
+| 7 | [MCP Explained](docs/07-mcp-explained.md) | ★★★★ | ✅ |
 | 8 | Building MCP Servers and Clients | ★★★★ | ⬜ |
 
 ## Part III — Data: Grounding the Model
@@ -79,22 +79,6 @@ Career weight: ★★★★★ essential · ★★★★ important · ★★★ 
 | --- | --- | --- | --- |
 | 27 | Enterprise AI Architecture | ★★★★★ | ⬜ |
 | 28 | Future Trends and Staying Current | ★★ | ⬜ |
-
----
-
-## The Running Example
-
-Every chapter builds the same system: **CaseMate**, an internal assistant for support engineers. It answers questions from product documentation and can look up a customer's support case by ID.
-
-You watch one system grow across twenty-eight chapters rather than meeting twenty-eight unrelated examples.
-
-| By the end of | CaseMate can |
-| --- | --- |
-| Part I | Answer a question and return a parseable result |
-| Part II | Look up a real case in the support system |
-| Part III | Answer from your product documentation, with citations |
-| Part IV | Triage a case end to end, across several steps |
-| Part VI | Prove it works, be traced, be bounded, and be affordable |
 
 ---
 

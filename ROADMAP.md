@@ -12,12 +12,12 @@ Each chapter ships complete — plain-English explanation, working snippets in r
 
 | | Count |
 | --- | --- |
-| Published | 5 / 28 |
-| Planned | 23 |
+| Published | 7 / 28 |
+| Planned | 21 |
 
-**Part I — Foundations is complete.**
-**Just shipped:** [Chapter 5 — Structured Outputs](docs/05-structured-outputs.md)
-**Next up:** Chapter 6 — Function and Tool Calling
+**Part I complete. Part II underway.**
+**Just shipped:** [Chapter 7 — MCP Explained](docs/07-mcp-explained.md)
+**Next up:** Chapter 8 — Building MCP Servers and Clients
 
 ---
 
@@ -33,8 +33,8 @@ Each chapter ships complete — plain-English explanation, working snippets in r
 
 ### Part II — Action: Tools and MCP
 
-- [ ] **6. Function and Tool Calling** — the mechanism behind every agent, in raw OpenAI then LangChain
-- [ ] **7. MCP Explained** — why a standard beats bespoke integrations, and what it does not solve
+- [x] **6. Function and Tool Calling** — the mechanism behind every agent, and why every tool call is untrusted input
+- [x] **7. MCP Explained** — the N×M problem, the three primitives, the stateless revision, and what MCP does not solve
 - [ ] **8. Building MCP Servers and Clients** — resources, tools, prompts, transports, and auth
 
 ### Part III — Data: Grounding
@@ -85,7 +85,7 @@ The playbook is written for an experienced software engineer with **no ML backgr
 | **Snippets under 12 lines** | If it needs more, it needs a diagram |
 | **No maths, ever** | ML appears only as intuition, in a clearly marked skippable box |
 | **No hardware internals** | Give the consequence, not the mechanism |
-| **One running example** | CaseMate, a support-engineer assistant, grows across all 28 chapters |
+| **Self-contained examples** | Every example is explained where it appears. No cross-chapter memory required |
 | **Paragraphs of 2–4 sentences** | And a bolded takeaway opening each section, so skimming works |
 
 Full guidance: [templates/CHAPTER_TEMPLATE.md](templates/CHAPTER_TEMPLATE.md).
