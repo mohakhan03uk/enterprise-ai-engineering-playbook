@@ -12,12 +12,12 @@ Each chapter ships complete — plain-English explanation, working snippets in r
 
 | | Count |
 | --- | --- |
-| Published | 7 / 28 |
-| Planned | 21 |
+| Published | 8 / 28 |
+| Planned | 20 |
 
-**Part I complete. Part II underway.**
-**Just shipped:** [Chapter 7 — MCP Explained](docs/07-mcp-explained.md)
-**Next up:** Chapter 8 — Building MCP Servers and Clients
+**Parts I and II complete.**
+**Just shipped:** [Chapter 8 — Building MCP Servers and Clients](docs/08-building-mcp-servers-and-clients.md)
+**Next up:** Chapter 9 — Embeddings
 
 ---
 
@@ -35,7 +35,7 @@ Each chapter ships complete — plain-English explanation, working snippets in r
 
 - [x] **6. Function and Tool Calling** — the mechanism behind every agent, and why every tool call is untrusted input
 - [x] **7. MCP Explained** — the N×M problem, the three primitives, the stateless revision, and what MCP does not solve
-- [ ] **8. Building MCP Servers and Clients** — resources, tools, prompts, transports, and auth
+- [x] **8. Building MCP Servers and Clients** — designing for a consumer that cannot read docs, and the token audience rule you cannot get wrong
 
 ### Part III — Data: Grounding
 

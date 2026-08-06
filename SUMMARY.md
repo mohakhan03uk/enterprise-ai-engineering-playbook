@@ -27,7 +27,7 @@ Career weight: ★★★★★ essential · ★★★★ important · ★★★ 
 | --- | --- | --- | --- |
 | 6 | [Function and Tool Calling](docs/06-function-and-tool-calling.md) | ★★★★★ | ✅ |
 | 7 | [MCP Explained](docs/07-mcp-explained.md) | ★★★★ | ✅ |
-| 8 | Building MCP Servers and Clients | ★★★★ | ⬜ |
+| 8 | [Building MCP Servers and Clients](docs/08-building-mcp-servers-and-clients.md) | ★★★★ | ✅ |
 
 ## Part III — Data: Grounding the Model
 

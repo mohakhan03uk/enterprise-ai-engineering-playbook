@@ -11,8 +11,9 @@ The playbook itself. Full contents and status: [SUMMARY.md](../SUMMARY.md).
 | 5 | [Structured Outputs](05-structured-outputs.md) | ★★★★★ | ✅ |
 | 6 | [Function and Tool Calling](06-function-and-tool-calling.md) | ★★★★★ | ✅ |
 | 7 | [MCP Explained](07-mcp-explained.md) | ★★★★ | ✅ |
+| 8 | [Building MCP Servers and Clients](08-building-mcp-servers-and-clients.md) | ★★★★ | ✅ |
 
-Next: Chapter 8 — Building MCP Servers and Clients.
+Parts I and II complete. Next: Chapter 9 — Embeddings.
 
 Chapters are published one at a time and ship complete. See [ROADMAP.md](../ROADMAP.md) for what is next and for the house style.
 
